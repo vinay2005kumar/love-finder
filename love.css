@@ -197,19 +197,34 @@ input:-webkit-autofill:active {
 /* Responsive styles */
 @media (max-width: 768px) {
     body{
-        /* overflow-y: auto; */
+        height:100vh;
+        position:absolute;
+        overflow: hidden;
+    }
+    .background img{
+        width: 107%;
+        height: 106%;
+        position: absolute;
+        left: -1em;
+        overflow: hidden;
+    }
+    .imgs img{
+        top:-30em;
     }
     .main {
-        width: 75%;
+        width: 85%;
         height: 22em;
         padding: 20px;
         bottom: 6em;
-        position:fixed;
-        top:-12em;
-        left: 2em;
-        margin-bottom: 16em;
+        position:absolute;
+        top:-10em;
+        left: 1em;
+        /* margin-bottom: 1em; */
     }
-
+    .leaf{
+        position: absolute;
+        bottom: 0em;
+    }
     input {
         width: 40%;
         margin-bottom: 10px;
@@ -299,6 +314,21 @@ input:-webkit-autofill:active {
 }
 
 @media (max-width: 480px) {
+    body{
+        position: fixed;
+        overflow:hidden;
+       
+    }
+    /* .background img{
+        top:0em;
+    } */
+    .main{
+        /* top:-8em; */
+        left: 0.5em;
+    }
+    .imgs img{
+        top:-28em;
+    }
     pre {
         font-size: 34px;
     }
@@ -309,6 +339,7 @@ input:-webkit-autofill:active {
 
     input {
         font-size: 18px;
+        left: 10em;
     }
 
     #submit {
